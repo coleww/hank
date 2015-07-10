@@ -1,0 +1,23 @@
+{
+  "name": "hank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "bayes": "0.0.4",
+    "cheerio": "^0.19.0",
+    "diacriticize": "^1.0.0",
+    "n-plus-7": "^1.1.0",
+    "poetic-vomit": "^1.0.1",
+    "request": "^2.58.0",
+    "to-unicode": "^1.0.2",
+    "twit": "^2.1.0",
+    "word-vomit": "^1.0.1",
+    "wordfilter": "^0.1.10"
+  }
+}
