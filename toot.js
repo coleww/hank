@@ -9,6 +9,6 @@ var T = new Twit({
 module.exports = function(text){
   T.post('statuses/update', { status: text }, function(err, data, response) {
     console.log(err)
-  console.log(data)
-})
+    console.log(data)
+  })
 }

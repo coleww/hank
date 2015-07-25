@@ -1,6 +1,8 @@
 var request = require("request")
 var cheerio = require("cheerio")
 
+// fetch the lyrics to a random song that is in the itunes top 100
+
 module.exports = function(cb){
   var pages = []
   request('http://lyrics.wikia.com/LyricWiki:Top_100', function (error, response, html) {
