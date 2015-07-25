@@ -1,6 +1,9 @@
 var request = require("request")
 var cheerio = require("cheerio")
 
+// fetch the lyrics to the top 100 songs on iTunes
+// (doesn't always return 100 songs)
+
 module.exports = function(cb){
   var pages = []
   request('http://lyrics.wikia.com/LyricWiki:Top_100', function (error, response, html) {

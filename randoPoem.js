@@ -1,5 +1,6 @@
 var request = require("request")
 
+// grabs some poems by a random author
 module.exports = function(cb){
   var pages = []
   request('http://poetrydb.org/author', function (error, response, body) {
