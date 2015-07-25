@@ -1,25 +1,21 @@
 var topHundo = require('./topHundo')
 var randoPoem = require('./randoPoem')
+var train = require('./train')
 var destructure = require('./destructure')
 var wordfilter = require("wordfilter")
-
-module.exports = function(text){
-  return
 var prettify = require('./prettify')
 var toot = require('./toot')
 
-// MIGHT AS WELL TRAIN A THING WHILE WE'RE AT IT? EH?
-
 topHundo(function(songLines){
-  console.log(songLines.length)
+  console.log("SONGS:", songLines.length)
   randoPoem(function(poemLines){
-    console.log(poemLines.length)
-    aLines = songLines//.filter(function(l){return l.length && filter(l)})
-    bLines = poemLines//.filter(function(l){return l.length && filter(l)})
-    console.log(aLines.length, bLines.length)
-    var line = aLines[~~(Math.random() * aLines.length)] + ' ' + bLines[~~(Math.random() * bLines.length)]
-    var newish = destructure(line)
+    console.log("POEMS:", poemLines.length)
+    console.log("starting training")
+    train(songLines, "song")
+    train(poemLines, "poem")
+    var line = songLines[~~(Math.random() * songLines.length)] + ' ' + poemLines[~~(Math.random() * poemLines.length)]
     console.log(line)
+    var newish = destructure(line)
     console.log(newish)
     if(!wordfilter.blacklisted(newish)){
       console.log("DOING IT")

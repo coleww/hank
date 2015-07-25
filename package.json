@@ -12,6 +12,7 @@
     "bayes": "0.0.4",
     "cheerio": "^0.19.0",
     "diacriticize": "^1.0.0",
+    "jsonfile": "^2.2.1",
     "n-plus-7": "^1.1.0",
     "poetic-vomit": "^1.0.1",
     "request": "^2.58.0",
