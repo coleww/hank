@@ -5,6 +5,7 @@ var destructure = require('./destructure')
 var wordfilter = require("wordfilter")
 var prettify = require('./prettify')
 var toot = require('./toot')
+var quiddle = require('./quiddle')
 
 topHundo(function(songLines){
   console.log("SONGS:", songLines.length)
@@ -25,3 +26,6 @@ topHundo(function(songLines){
     }
   })
 })
+
+
+quiddle()
