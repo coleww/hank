@@ -1,5 +1,4 @@
 var quidprofollow = require('quidprofollow')
-
 module.exports =  function () {
    quidprofollow(
        {
