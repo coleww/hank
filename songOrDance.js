@@ -22,7 +22,8 @@ module.exports = function (toot_text, cb) {
     word.topExample({
         useCanonical: false, limit: 1
     }, function (e, ex) {
-      console.log(e, ex)
+        console.log(e, ex)
+        if(ex){
       var other = ex.text
       var newish = destructure(other)
       console.log(newish)
@@ -45,6 +46,7 @@ module.exports = function (toot_text, cb) {
       } else {
         console.log("bonk")
       }
+        }
     });
   });
 }
