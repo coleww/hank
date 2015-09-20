@@ -33,7 +33,7 @@ function doThatHank () {
       console.log(newish)
       if(!wordfilter.blacklisted(newish) && isCool(newish)){
         console.log("DOING IT")
-          toot(addEnder(capitalize(prettify(newish).toLowerCase()) ))
+          toot(addEnder(capitalize(prettify(newish).toLowerCase().replace(/,$/, '') ))
       } else {
         console.log("bonk")
       }
